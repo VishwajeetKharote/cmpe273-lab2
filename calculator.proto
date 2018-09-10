@@ -1,0 +1,35 @@
+// Copyright 2015 gRPC authors.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+
+package add;
+
+// The addition service definition.
+service Addition {
+  // The method which takes the request and returns the response
+  rpc Addition (AddRequest) returns (AddReply) {}
+  //rpc SayHelloAgain (HelloRequest) returns (HelloReply) {}
+}
+
+// The request message containing the two numbers to be added.
+message AddRequest {
+  int32 num1 = 1;
+  int32 num2 = 2;
+}
+
+// The response message containing the result of the addition
+message AddReply {
+  int32 result = 1;
+}

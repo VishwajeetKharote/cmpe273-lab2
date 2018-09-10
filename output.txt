@@ -1,0 +1,12 @@
+***********************Running server***********************
+
+C:\Users\vishw\Desktop\lab2>python calculator_server.py
+
+***********************Running client***********************
+
+C:\Users\vishw\Desktop\lab2>python calculator_client.py
+Enter number one for addition:  2
+Enter number two for addition:  5
+Addition of two number is:      7
+
+
