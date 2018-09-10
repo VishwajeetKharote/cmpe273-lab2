@@ -7,4 +7,4 @@
 - calculator_server.py contains the function to add the 2 numbers which are received from client program.
 - output.txt is the output file
 
-### You need to compile the calculator.proto file
+### This repository also contains the files generated after compiling the calculator.proto file
